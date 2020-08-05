@@ -13,6 +13,7 @@ routes.get('/', (request, response) => {
 routes.post('/classes', classesController.create);
 routes.get('/classes', classesController.index);
 
-routes.get('/connections', connectionsController.create);
+routes.post('/connections', connectionsController.create);
+routes.get('/connections', connectionsController.index);
 
 export default routes;
